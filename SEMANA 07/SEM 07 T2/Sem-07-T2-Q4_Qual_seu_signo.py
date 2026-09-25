@@ -43,7 +43,7 @@ def signo(dia, mes):
     elif (mes == 2 and dia >= 19) or (mes == 3 and dia <= 20):
     	meu_signo = "Peixes"
     else:
-    	meu_signo = "Data Invalida!"
+    	meu_signo = "Data Inválida!"
 
     return meu_signo
 
