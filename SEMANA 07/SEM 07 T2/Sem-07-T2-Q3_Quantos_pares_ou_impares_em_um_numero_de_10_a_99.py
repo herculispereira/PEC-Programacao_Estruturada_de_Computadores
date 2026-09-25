@@ -12,8 +12,7 @@ def eh_impar(numero):
 	return (d, u)
 
 def main():
-	contador_impar = 0
-	numero = int(input("Insira um número: ").strip())
+	numero = int(input("Insira um número entre 10 e 99: ").strip())
 
 	dezena, unidade = eh_impar(numero)
 	if dezena % 2 == 1 and unidade % 2 == 1:

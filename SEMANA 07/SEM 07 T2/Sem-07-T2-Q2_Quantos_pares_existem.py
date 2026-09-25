@@ -11,30 +11,31 @@ def eh_par(numero):
 
 
 def main():
-	numero = int(input().strip())
-	contador_par = 0
+	numero = int(input("Digite um número entre 100 e 999: ").strip())	
 	centena, dezena, unidade = eh_par(numero)
 
 	if 100 <= numero <=999:
 		if centena % 2 == 0 and dezena % 2 == 0 and unidade % 2 == 0:
-			contador_par += 3
+			contador_par = 3
 
 		elif (centena % 2 == 0 and dezena % 2 == 0) or (centena % 2 == 0 and unidade % 2 == 0) or (dezena % 2 == 0 and unidade % 2 == 0):
-			contador_par +=2
+			contador_par =2
 
+		elif centena % 2 == 0 or dezena % 2 == 0 or unidade % 2 == 0:
+			contador_par =1
 		else:
-			contador_par +=1
+			contador_par =0
 
 		
 	else:
 		if dezena % 2 == 0 and unidade % 2 == 0:
-			contador_par +=2
+			contador_par =2
 		elif dezena % 2 == 0 or unidade % 2 == 0:
-			contador_par += 1
+			contador_par = 1
 		else:
 			contador_par = 0
 
-	print(contador_par)
+	print(f"O Número {numero} tem {contador_par} digito(s) par(es)")
 
 if __name__ == "__main__":
 	main()
