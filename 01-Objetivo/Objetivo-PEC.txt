@@ -1,0 +1,8 @@
+Objetivo:
+• Compreender a programação estruturada de computadores utilizando a linguagem Python;
+• Conhecer os comandos básicos da linguagem;
+• Conhecer operadores, tipos de dados e expressões;
+• Criar programas estruturados de forma modularizada;
+• Aplicar estruturas condicionais e de repetição na criação de programas estruturados;
+• Conhecer os principais tipos de dados estruturados: listas, tuplas e dicionários;
+• Manipulação de arquivos com Python.
