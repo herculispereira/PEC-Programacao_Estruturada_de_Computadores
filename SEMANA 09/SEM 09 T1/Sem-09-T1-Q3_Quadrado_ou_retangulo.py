@@ -14,12 +14,12 @@ def verificacao(base, altura):
 	else:
 		perimetro = base * 2 + altura * 2
 		area = base * altura
-		return perimetro ,"-", area
+		return f"{perimetro} - {area}"
 
 def main():
 
-	base = int(input().strip())
-	altura = int(input().strip())
+	base = int(input("Base: ").strip())
+	altura = int(input("altura: ").strip())
 
 	print(verificacao(base, altura))
 
