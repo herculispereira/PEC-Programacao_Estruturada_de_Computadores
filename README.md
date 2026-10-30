@@ -20,8 +20,8 @@ Com o intuito de desenvolver programação em 🐍 Python.
 	- [x] Multipla
 	- [x] Aninhada
 - [ ] Repetições
+	- [x] For
 	- [ ] While
-	- [ ] For
 	- [ ] Do While
 - [ ] Variáveis Compostas
 	- [ ] Listas
