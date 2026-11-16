@@ -11,6 +11,7 @@ def fatorial(numero):
 		return 1
 
 	while 1 < numero:
+	
 		fatorial *= numero 
 		numero -= 1
 
