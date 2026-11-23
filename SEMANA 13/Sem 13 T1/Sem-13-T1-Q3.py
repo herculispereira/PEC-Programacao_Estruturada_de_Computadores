@@ -60,14 +60,22 @@ def insercao_letras(tamanho_lista):
 def main():
 
 	n = int(input().strip())
+	if n == 0:
+		print([])
+		print([])
+		print("SEM NOTAS")
+		print(0)
+		print([])
+	else:
+	    print(exibicao_oposta(n))
 
-	print(exibicao_oposta(n))
-	notas, media = notas_e_medias(n)
-	print(notas)
-	print(f"{media:.1f}")
-	quantidade_vogais, letras = insercao_letras(n)
-	print(quantidade_vogais)
-	print(letras)
+	    notas, media = notas_e_medias(n)
+	    print(notas)
+	    print(f"{media:.1f}")
+
+	    quantidade_vogais, letras = insercao_letras(n)
+	    print(quantidade_vogais)
+	    print(letras)
 
 
 if __name__ == "__main__":
