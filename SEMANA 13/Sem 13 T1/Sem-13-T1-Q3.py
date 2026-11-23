@@ -59,7 +59,7 @@ def insercao_letras(tamanho_lista):
 
 def main():
 
-	n = int(input())
+	n = int(input().strip())
 
 	print(exibicao_oposta(n))
 	notas, media = notas_e_medias(n)

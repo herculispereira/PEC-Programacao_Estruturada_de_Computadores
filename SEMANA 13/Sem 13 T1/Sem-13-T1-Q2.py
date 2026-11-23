@@ -23,7 +23,7 @@ def insercao_nao_nula(tamanho_lista):
 def insercao_ordenada_teclado(tamanho_lista):
 		lista = []
 		for i in range (tamanho_lista):
-			numero = int(input(f"Insira o {i+1} número: "))
+			numero = int(input(f"Insira o {i+1} número: ").strip())
 			lista.append(numero)
 
 		return lista
@@ -39,7 +39,7 @@ def insercao_decrescente_teclado(tamanho_lista):
 
 def main():
 
-	n = int(input("Insira o tamanho da lista: "))
+	n = int(input("Insira o tamanho da lista: ").strip())
 	
 	print(f"Os Números inseridos foram {insercao_nula(n)}")
 	print("\nProxima Lista!")

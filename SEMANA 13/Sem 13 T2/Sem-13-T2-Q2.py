@@ -7,45 +7,40 @@ DICA: Use a função a sorted() ou o método sort() para realizar a ordenação 
 def insercao():
 	lista = []
 
-	for i in range (4):
+	for i in range (100):
 
-		numero = int(input(f"Insira um número: "))
+		numero = int(input(f"Insira o {i+1} número:").strip())
 		lista.append(numero)
 
 	return lista
 
+def ordenacao(lista_numeros):		
 
-def ordenacao(lista_numeros):
-		
-
-		for item1 in range(4):
-			for item2 in range (item1, 4):
+		for item1 in range(100):
+			for item2 in range (item1, 100):
 				if lista_numeros[item1] > lista_numeros[item2]:
 					aux = lista_numeros[item1]
 					lista_numeros[item1] = lista_numeros[item2]
 					lista_numeros[item2] = aux
 
-
 		return lista_numeros
 
-def multiplicacao(lista_numeros):
-		nova_lista_numeros = lista_numeros		
+def multiplicacao(lista_numeros):	
 
-		for indice in range(4):
+		for indice in range(100):
 				if indice % 2 == 0:
 					lista_numeros[indice] *= 3
 
 				else:
 					lista_numeros[indice] *= 5
 
-
-		return nova_lista_numeros, lista_numeros
+		return lista_numeros
 
 def main():
 
 	lista = insercao()
-	print(ordenacao(lista))
-	print(multiplicacao(lista))
+	lista_ordenada = ordenacao(lista)
+	print(f"Resultado: {multiplicacao(lista_ordenada)}")
 
 if __name__ == "__main__":
 	main()

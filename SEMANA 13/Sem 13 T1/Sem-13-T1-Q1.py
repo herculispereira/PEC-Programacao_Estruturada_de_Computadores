@@ -1,6 +1,15 @@
 '''
 Leia uma lista de 10 (dez) números inteiros, mostre os números, sua soma e a multiplicação.
 '''
+def insercao():
+	numeros = []
+
+	for i in range (10):
+		numero = int(input(f"Insira o {i+1} número: ").strip())
+		numeros.append(numero)
+
+	return numeros
+
 def soma(lista_numeros):
 		soma = 0
 
@@ -17,14 +26,9 @@ def multiplicacao(lista_numeros):
 
 		return total_multiplicacao
 
-
 def main():
 
-	numeros = []
-
-	for i in range (10):
-		numero = int(input())
-		numeros.append(numero)
+	numeros = insercao()
 
 	print(f"Os Números digitados foram: {numeros}")
 	print(f"A Soma dos números digitados é {soma(numeros)}")

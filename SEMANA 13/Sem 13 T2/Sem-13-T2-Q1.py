@@ -10,7 +10,7 @@ def insercao():
 
 	while True:
 
-		numero = int(input("Insira um número: "))
+		numero = int(input("Insira um número: ").strip())
 
 		if numero == 0:
 			break
