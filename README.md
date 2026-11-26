@@ -19,11 +19,11 @@ Com o intuito de desenvolver programação em 🐍 Python.
 	- [x] Compostas
 	- [x] Multipla
 	- [x] Aninhada
-- [ ] Repetições
+- [X] Repetições
 	- [x] For
 	- [X] While
 - [ ] Variáveis Compostas
-	- [ ] Listas
+	- [X] Listas
 	- [ ] Tuplas
 	- [ ] Dicionários
 
