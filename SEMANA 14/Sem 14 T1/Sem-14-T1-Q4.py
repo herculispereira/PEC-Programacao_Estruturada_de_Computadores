@@ -11,8 +11,8 @@ def insercao():
 	lista_altura = []
 
 	for i in range(12):
-		lista_nome.append(input())
-		lista_altura.append(float(input()))
+		lista_nome.append(input(f"Insira o nome do {i+1} jogador: "))
+		lista_altura.append(float(input(f"Insira a altura do {i+1} jogador: ")))
 
 	return lista_nome, lista_altura
 
@@ -20,8 +20,8 @@ def maior_jogador(listaNomes, listaAlturas):
 	nome_maior = ""
 	altura_maior = 0
 
-	for i in range(11):
-		if listaAlturas[i] > listaAlturas[i+1]:
+	for i in range(12):
+		if listaAlturas[i] > altura_maior:
 			nome_maior = listaNomes[i]
 			altura_maior = listaAlturas[i]
 
@@ -36,7 +36,8 @@ def media_alturas(listaAlturas):
 	return soma_alturas / 12
 
 def maiores_que_media(listaNomes, listaAlturas, media):
-	nomes_maiores = alturas_maiores = []
+	nomes_maiores = []
+	alturas_maiores = []
 
 	for i in range(12):
 		if listaAlturas[i] > media:
@@ -51,7 +52,7 @@ def main():
 	print("JOGADOR MAIS ALTO DO TIME")
 	nome, altura = maior_jogador(lista_nome, lista_altura)
 	print(nome)
-	print(altura)
+	print(f"{altura:.2f}")
 
 	print("ALTURA MÉDIA DO TIME")
 	media = media_alturas(lista_altura)
@@ -59,9 +60,9 @@ def main():
 
 	print("JOGADORES MAIS ALTOS QUE A MÉDIA DO TIME")
 	nomes_altos, alturas_altos = maiores_que_media(lista_nome, lista_altura, media)
-	for i in range(12):
+	for i in range(len(nomes_altos)):
 		print(nomes_altos[i])
-		print(alturas_altos[i])
+		print(f"{alturas_altos[i]:.2f}")
 
 if __name__ == "__main__":
 	main()

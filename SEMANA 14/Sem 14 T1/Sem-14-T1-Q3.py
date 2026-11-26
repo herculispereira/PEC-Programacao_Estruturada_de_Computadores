@@ -22,6 +22,7 @@ def main():
 	lista_A = insercao()
 	lista_B = insercao()
 	lista_C = soma(lista_A, lista_B)
+	
 	print(f"Lista A: {lista_A}")
 	print(f"Lista B: {lista_B}")
 	print(f"Resultado: {lista_C}")
